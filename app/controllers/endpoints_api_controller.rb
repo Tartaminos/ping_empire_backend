@@ -1,0 +1,2 @@
+class EndpointsApiController < ApplicationController
+end

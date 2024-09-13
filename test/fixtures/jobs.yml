@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  endpoint: one
+  started_at: 2024-09-12 22:39:44
+  finish_at: 2024-09-12 22:39:44
+  status: MyString
+
+two:
+  user: two
+  endpoint: two
+  started_at: 2024-09-12 22:39:44
+  finish_at: 2024-09-12 22:39:44
+  status: MyString

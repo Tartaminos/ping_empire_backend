@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  endpoint: one
+  request_sent_date: 2024-09-12 22:40:17
+  request_return_date: 2024-09-12 22:40:17
+  status: MyString
+
+two:
+  endpoint: two
+  request_sent_date: 2024-09-12 22:40:17
+  request_return_date: 2024-09-12 22:40:17
+  status: MyString
