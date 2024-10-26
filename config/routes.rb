@@ -1,13 +1,7 @@
 Rails.application.routes.draw do
-
   resources :users
-  resources :endpoints
-  resources :endpoint_statuses
   resources :jobs
 
-
-  post '/register', to: 'users#register'
-  post '/login', to: 'users#login'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -17,7 +11,17 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  #options
+  Rails.application.routes.draw do
+    namespace :api do
+      resources :endpoints
+      resources :users
 
-  match '*path', to: 'application#options', via: :options
+      post "/register", to: "users#register"
+      post "/login", to: "users#login"
+    end
+  end
+
+  # options
+
+  match "*path", to: "application#options", via: :options
 end

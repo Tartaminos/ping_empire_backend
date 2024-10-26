@@ -1,2 +1,0 @@
-class EndpointsApiController < ApplicationController
-end
